@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link a href="./style.css" rel="stylesheet" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+     
+    
+    <div id="container">
+       
+       
+        <div class="slider1">
+            <div class="cart-item1"></div>
+            <div class="cart-item2"></div>
+            <div class="cart-item7"></div>
+            <div class="cart-item7"></div>
+            <div class="cart-item7"></div>
+            <div class="cart-item7"></div>
+            <div class="cart-item7">
+              <label id="switch" class="switch"  >
+                <input onclick="toggleTheme();"  type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+      <h1 class="hero-text" style="text-align: center;">Shop</h1>
+      
+      
+    
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="card">
+              <h3>Nike Air</h3>
+              <h1>$100</h1>
+              <button class="add-to-cart" onclick="this.disabled = true">Add to cart</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <h3>Air max</h3>
+              <h1>$120</h1>
+              <button class="add-to-cart2">Add to cart</button>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <h3>yeezy boost</h3>
+              <h1>$150</h1>
+              <button class="add-to-cart3">Add to cart</button>
+            </div>
+          </div>
+        </div>
+ 
+
+      <div id="cart" class="cart">
+     
+            <h1 style="background-color: rgb(204, 204, 204); padding: 5px; width: 100%; height: auto">Cart</h1>
+         
+            <div class="list">
+              <div>Item No.</div>
+              <div>Name</div>
+              <div>Qty</div>
+              <div>Add</div>
+              <div>Sub</div>
+              <div>total</div>
+              <div></div>
+          </div>
+
+        <div class="grid-container-2" >
+          <div class="cart-item1">#1</div>
+          <div class="cart-item2">Nike Air</div>
+          <div id="cart-item3" class="cart-item3">0</div>
+          <div class="cart-item4"><button class="btn-chng"  >+</button></div>
+          <div class="cart-item5"><button class="btn-chng"   >-</button></div>
+          <div id="cart-item6" class="cart-item6">0</div>  
+          <!-- <div class="cart-item7"><button class="deleteBtn">Delete</button></div>    -->
+           </div>
+        
+    </div>
+    <hr style="width: 100%"/>
+    <div class="grid-container-2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="total">Total: $</div>
+      <div class="checkout"><button class="deleteBtn" id="checkout-btn">Checkout</button></div>
+      
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
